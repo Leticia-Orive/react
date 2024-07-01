@@ -15,3 +15,4 @@
         
 2. React + vite
     2.1 Comando npm create vite@latest
+3. Componentes
