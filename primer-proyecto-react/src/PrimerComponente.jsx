@@ -1,4 +1,4 @@
-
+import './styles/PrimerComponente.css'
 
 //Creamos variables de entorno para poder usar JSX
 const string = 'Esto es un texto'
@@ -9,11 +9,12 @@ const funcion = () => 1+1
 const objeto = {nombre: 'Curso de javaScript', duracion: 4}
 const fecha = new Date()
 
+
+
 //Función que retorna un h1 con el texto Hola Mundo
 export const PrimerComponente = () => {
   return (
     //Vamos a usar las variables de entorno
-    
     /*vamos a usar la variable string
     <h1>{string}</h1>*/
     /*vamos a usar la variable number
@@ -33,6 +34,8 @@ export const PrimerComponente = () => {
     <h1>{fecha}</h1>*/
     /* o tambien con json.stringify
     <h1>{JSON.stringify(fecha)}</h1>*/
+
+
     //Antes para que no nos de error metiamos todo en un div ahora con React.Fragment no es necesario
     //pero si queremos usar un div lo podemos hacer
     //Ahora tambien nos funcionaria quitando la importacion de Fragment y poniendo <></>
