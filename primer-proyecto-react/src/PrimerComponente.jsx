@@ -1,3 +1,5 @@
+
+
 //Creamos variables de entorno para poder usar JSX
 const string = 'Esto es un texto'
 const number = 123456
@@ -11,6 +13,7 @@ const fecha = new Date()
 export const PrimerComponente = () => {
   return (
     //Vamos a usar las variables de entorno
+    
     /*vamos a usar la variable string
     <h1>{string}</h1>*/
     /*vamos a usar la variable number
@@ -28,8 +31,20 @@ export const PrimerComponente = () => {
     <h1>{JSON.stringify(objeto)}</h1>*/
     /*vamos a usar la variable fecha
     <h1>{fecha}</h1>*/
-    // o tambien con json.stringify
-    <h1>{JSON.stringify(fecha)}</h1>
+    /* o tambien con json.stringify
+    <h1>{JSON.stringify(fecha)}</h1>*/
+    //Antes para que no nos de error metiamos todo en un div ahora con React.Fragment no es necesario
+    //pero si queremos usar un div lo podemos hacer
+    //Ahora tambien nos funcionaria quitando la importacion de Fragment y poniendo <></>
+    <>
+      <h1>Variables en JSX</h1>
+    <h4>Variable tipo String:</h4><p>{string}</p>
+    <h4>Variable tipo number:</h4><p>{number}</p>
+    <h4>Variable tipo array:</h4><p>{array}</p>
+    <h4>Variable tipo boolean:</h4><p>{boolean}</p>
+    <h4>Variable tipo funcion:</h4><p>{funcion()}</p>  
+    </>
+    
     
   
   )
