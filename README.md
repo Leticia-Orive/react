@@ -19,3 +19,4 @@
 4. Variables en JSX
 5. Fragment en JSX
 6. Estilos de React
+7. Props
